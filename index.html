@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<title>ITC ASSIGNMENTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {padding: 16px}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+</style>
+</head>
+<body>
+
+<!-- Side Navigation --> 
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom w3-large"><img src="Assignment.png" style="width:60%;"></a>
+  <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
+  class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">New Message <i class="w3-padding fa fa-pencil"></i></a>
+  <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>My ITC Assignments<i class="fa fa-caret-down w3-margin-left"></i></a>
+  <div id="Demo1" class="w3-hide w3-animate-left">
+
+    
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Intro');w3_close();" id="firstTab">
+      <div class="w3-container">
+        <img class="w3-round w3-margin-right" src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t1.15752-9/305613248_5263788140410056_1731945515581866337_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGsvYH-YmjMUXkqxVwonHfCWMg5ln-sYQFYyDmWf6xhAakBV-5X4oxcZe6smWvPTrFxPlOBZy8fuzWwcMAPfqa5&_nc_ohc=34i-ZkuyYpoAX_mFNlu&_nc_ht=scontent.fdvo2-2.fna&oh=03_AdTKphxASQeABdfD3ki3VmJ8hZLQICo_nLte8BOvp_gwLg&oe=63783B88" style="width:15%;"><span class="w3-opacity w3-large">INTRODUCTION</span>
+        
+      </div>
+
+
+    </a>
+     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('SimpleComputation');w3_close();">
+      <div class="w3-container">
+        <img class="w3-round w3-margin-right" src="C.png" style="width:15%;"><span class="w3-opacity w3-large">CONVERSION</span>
+      </div>
+          <script> 
+            function FtoC(fahren) {
+            fahren = parseFloat(fahren);
+            document.getElementById("outputCelsius").innerHTML = (fahren-32) * 5 / 9; }
+
+            function CtoF(cel) {
+            cel = parseFloat(cel);
+            document.getElementById("outputFahrenheit").innerHTML = (cel * 9 / 5) + 32; }
+
+            function MetToFeet(met) {
+            met = parseFloat(met);
+            document.getElementById("outputFeet").innerHTML = met * 3.28084; }
+
+            function FeetToMet(feet) {
+            feet = parseFloat(feet);
+            document.getElementById("outputMeters").innerHTML = feet * 0.3048; }
+         </script>
+    </a>
+
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Tax');w3_close();">
+      <div class="w3-container">
+        <img class="w3-round w3-margin-right" src="i.png" style="width:15%;"><span class="w3-opacity w3-large">INCOME TAX CALCULATOR</span>
+
+      </div>
+      <script>
+                function incomeTaxCalculator(){
+                var x = document.getElementById("TaxIncome").value;
+
+                if(x >= 0 && x <= 250000 ){
+                var y = 0;
+                document.getElementById("demo").innerHTML = "Income Tax: " + y;
+                }
+                else if(x > 250000 && x <= 400000){
+                var y = (x - 250000) * 0.20;
+                document.getElementById("demo").innerHTML = "Income Tax: " + y;
+                }
+                else if(x > 400000 && x <= 800000){
+                var y = (x - 400000) * 0.25 + 30000;
+                document.getElementById("demo").innerHTML = "Income Tax: " + y;
+                }
+                else if(x > 800000 && x <= 2000000){
+                var y = (x - 800000) * 0.30 + 130000;
+                document.getElementById("demo").innerHTML = "Income Tax: " + y;
+                }
+                else if(x > 2000000 && x <= 8000000){
+                var y = (x - 2000000) * 0.32 + 490000;
+                document.getElementById("demo").innerHTML = "Income Tax: " + y;
+                }
+                else if(x > 8000000){
+                var y = (x - 8000000) * 0.35 + 2410000;
+                document.getElementById("demo").innerHTML = "Income Tax: " + y;
+                }
+            }
+      </script>
+    </a>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('FactorialPage');w3_close();">
+      <div class="w3-container">
+        <img class="w3-round w3-margin-right" src="F.png" style="width:15%;"><span class="w3-opacity w3-large">FACTORIAL CALCULATOR</span>
+
+      </div>
+      <script>
+             function factorialFunc(){
+             var userInput = document.getElementById("userInput").value;
+             
+             let factorial = 1;
+             let num = 1;
+             
+             while(num <= userInput){
+                factorial = factorial * num;
+                num++;
+             }
+             document.getElementById("factorial").innerHTML = "FACTORIAL:  " + factorial;
+
+             let add = 1;
+             let sum = 0;
+
+             do {
+                sum = sum + add;
+                add++;
+             } 
+             while(add <= userInput);
+             document.getElementById("sum").innerHTML = "SUM:  " + sum;
+
+             var average;
+
+             for (add; add <= userInput; add++){
+                sum = sum + adder;
+             }
+             average = sum / userInput;
+             average = average.toFixed(2);
+             document.getElementById("average").innerHTML = "AVERAGE:  " + average;
+
+            }
+      </script>
+    </a>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Payroll');w3_close();">
+      <div class="w3-container">
+        <img class="w3-round w3-margin-right" src="S.png" style="width:15%;"><span class="w3-opacity w3-large">SIMPLE PAYROLL</span>
+
+      </div>
+          <script>
+        function addToTable(){
+            var deduction = document.getElementById("deduc").value;
+            var dailyrate = document.getElementById("dailyRate").value;
+            var worker = document.getElementById("nameWorker").value;
+            var daywork = document.getElementById("daysWork").value;
+
+            let grosspay = daywork * dailyrate;
+            let netpay = grosspay - deduction;
+            var table = document.getElementById("tableBody");
+            var totalRowCount = table.rows.length; 
+            
+            var row = table.insertRow();
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            var cell6 = row.insertCell(5);
+            var cell7 = row.insertCell(6);
+
+
+            cell1.innerHTML = totalRowCount + 1;
+            cell2.innerHTML = worker;
+            cell3.innerHTML = daywork;
+            cell4.innerHTML = dailyrate;
+            cell5.innerHTML = grosspay;
+            cell6.innerHTML = deduction;
+            cell7.innerHTML = netpay;
+
+        }  
+        function deleteRow(){
+            var line = document.getElementById("lineNumber").value;
+            var length = document.getElementById("tableBody").rows.length;
+            var line2 = line;
+            document.getElementById("tableBody").deleteRow(line - 1);
+            while(line2 <= length){
+                var y = document.getElementById("tableBody").rows[line2 - 1].cells;
+                y[0].innerHTML = line2;
+                line2++;
+            }
+        }
+    </script>
+    </a>
+
+  </div>
+
+
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-paper-plane w3-margin-right"></i>Sent</a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-hourglass-end w3-margin-right"></i>Drafts</a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trash w3-margin-right"></i>Trash</a>
+</nav>
+
+<!-- Modal that pops up when you click on "New Message" -->
+<div id="id01" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-padding w3-red">
+       <span onclick="document.getElementById('id01').style.display='none'"
+       class="w3-button w3-red w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
+      <h2>Send Mail</h2>
+    </div>
+    <div class="w3-panel">
+      <label>To</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <label>From</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="What's on your mind?">
+      <div class="w3-section">
+        <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
+        <a class="w3-button w3-light-grey w3-right" onclick="document.getElementById('id01').style.display='none'">Send  <i class="fa fa-paper-plane"></i></a> 
+      </div>    
+    </div>
+  </div>
+</div>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="w3-main" style="margin-left:320px;">
+<i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
+<a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
+
+<div id="Intro" class="w3-container person">
+  <br>
+  <img class="w3-round  w3-animate-top" src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t1.15752-9/300233205_1461358664384588_4518605820290225835_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeF4_DZetyXp22IVHeAnPF-GllnNgCvUTi6WWc2AK9ROLt-GSt0XlWgfJ5ZcVOcLv_egFy1Ca6ktA3_N5ZXwZfFE&_nc_ohc=rlSu6HpE_FgAX_CJGT2&_nc_ht=scontent.fdvo2-2.fna&oh=03_AdRWmecZLSnvLqPK1Dp4dRHVWMVvlGvM-ifOzi_HLEUDcw&oe=6376415A" style="width:20%;">
+  <h5 class="w3-opacity">Subject: Introduction</h5>
+  <h4><i class="fa fa-clock-o"></i> INTRODUCTION</h4>
+  <a class="w3-button w3-light-grey" href="#">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a class="w3-button w3-light-grey" href="#">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+  <hr>
+  <img src="https://scontent.fmnl25-2.fna.fbcdn.net/v/t1.15752-9/306297278_664792955249405_2475717515765285398_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGFYx-OhUrtmuA-Zeb9cehvdNw50eRPo2x03DnR5E-jbFB8Z3KsuCdd2c4C5pen6KlJbD-OoKdTk1QStmWwDCt-&_nc_ohc=kAIN0M2o5yQAX-s8YdU&_nc_ht=scontent.fmnl25-2.fna&oh=03_AdRvn-DBoUkQOAoIZOQ4akHfKAqfTiPZjX4ePFjjokOhbQ&oe=63778271" class="center" role="img" >
+  <p>This site showcases my Assignment #1 to Assignment #4 for my CS 1130 class as seen on the right corner</p>
+  <p>Sincerely yours, <br>Emmanuel Aguado</p>
+</div>
+
+<div id="SimpleComputation" class="w3-container person">
+  <br>
+  <img class="w3-round w3-animate-top" src="conversion.png" style="width:20%;">
+  <h5 class="w3-opacity">Subject: CONVERSION</h5>
+  <h4><i class="fa fa-clock-o"></i> Conversion of Units.</h4>
+  <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+    <h3> Fahrenheit to Celsius: </h3>
+     <p>
+     <label>Fahrenheit:</label>
+     <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+      oninput="FtoC(this.value)"
+     onchange="FtoC(this.value)">
+      </p>
+      <p style="color:red">Celsius: <span id="outputCelsius"></span></p>
+    <h3> Celsius to Fahrenheit: </h3>
+      <p>
+      <label>Celsius:</label>
+      <input id="inputCelsius" type="number" placeholder="Celsius"
+      oninput="CtoF(this.value)"
+      onchange="CtoF(this.value)">
+     </p>
+     <p style="color:red">Fahrenheit: <span id="outputFahrenheit"></span></p>
+    <h3> Meters to Feet: </h3>
+      <label>Meters:</label>
+     <input id="inputMeter" type="number" placeholder="Meters"
+     oninput="MetToFeet(this.value)"
+     onchange="MetToFeet(this.value)">
+      </p>
+      <p style="color:red">Feet: <span id="outputFeet"></span></p>
+    <h3> Feet to Meters: </h3>
+     <label>Feet:</label>
+      <input id="inputFeet" type="number" placeholder="Feet"
+     oninput="FeetToMet(this.value)"
+     onchange="FeetToMet(this.value)">
+      </p>
+      <p style="color:red">Meters: <span id="outputMeters"></span></p>
+</div>
+
+<div id="Tax" class="w3-container person">
+  <br>
+  <img class="w3-round w3-animate-top" src="tax.png" style="width:20%;">
+  <h5 class="w3-opacity">Subject: Taxes</h5>
+  <h4><i class="fa fa-clock-o"></i> INCOME TAX CALCULATOR</h4>
+  <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+          <h1> Income Tax Calculator </h1>
+         <label> Taxable Income: </label>
+         <input id="TaxIncome" type="number" placeholder="Enter Value">
+         <button id="startFunction" onclick="incomeTaxCalculator()"> Compute </button> 
+         <p style="color:red" id="demo"> </p>
+</div>
+<div id="FactorialPage" class="w3-container person">
+  <br>
+  <img class="w3-round w3-animate-top" src="factorial.png" style="width:20%;">
+  <h5 class="w3-opacity">Subject: Factorial</h5>
+  <h4><i class="fa fa-clock-o"></i> FACTORIAL CALCULATOR</h4>
+  <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+     
+
+     <h1>Factorial, Sum, and Average</h1>
+     
+
+        
+     <label>Integer: </label>
+     <input id="userInput" type="number" placeholder='Enter value'>
+     <button id="compute" onclick="factorialFunc()"> Compute </button>
+    
+     <p style="color:red"  id="factorial"></p>
+     <p style="color:red"  id="sum"></p>
+     <p style="color:red"  id="average"></p>
+
+
+
+</div>
+<div id="Payroll" class="w3-container person">
+  <br>
+  <img class="w3-round w3-animate-top" src="Payroll.png" style="width:20%;">
+  <h5 class="w3-opacity">Subject: Payroll</h5>
+  <h4><i class="fa fa-clock-o"></i> SIMPLE PAYROLL TABLE</h4>
+  <a class="w3-button w3-light-grey">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a class="w3-button w3-light-grey">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+>
+
+    <h1> Simple Payroll </h1>
+    <p id="demo"> </p>
+   <div class="no1">
+    <label> Employee Name: </label>
+    <input id="nameWorker" type="text" placeholder="Enter name"><br><br>
+    <label> Days Worked: </label>
+    <input id="daysWork" type="number" placeholder="Enter days"> <br><br>
+    <label> Daily Rate: </label>
+    <input id="dailyRate" type="number" placeholder="Enter rate"> <br><br>
+    <label> Deduction Amount: </label>
+    <input id="deduc" type="number" placeholder="Enter deduction"> <br><br>
+    <button id="add" onclick="addToTable()"> Add Information </button> <br> <br>
+    <label>Delete Line Number: </label>
+    <input id="lineNumber" type="number" placeholder="Enter Line Number">
+    <button id="delete" onclick="deleteRow()"> Delete </button> 
+   </div> <br>
+    <table style="color:red" style="width:100%" id="myTable">
+        <thead id="tableHead">
+            <tr>
+                <th>No.</th>
+                <th> |Employee Name| </th>
+                <th> Days Worked| </th>
+                <th> Daily Rate| </th>
+                <th> Gross Pay| </th>
+                <th> Deduction Amount| </th>
+                <th> Net Pay| </th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            
+            
+        </tbody>
+    </table>
+     <br><br>
+</div>
+
+
+
+<script>
+var openInbox = document.getElementById("myBtn");
+openInbox.click();
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function myFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show"; 
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+
+openMail("Intro")
+function openMail(personName) {
+  var i;
+  var x = document.getElementsByClassName("person");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x = document.getElementsByClassName("test");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" w3-light-grey", "");
+  }
+  document.getElementById(personName).style.display = "block";
+  event.currentTarget.className += " w3-light-grey";
+}
+</script>
+
+<script>
+var openTab = document.getElementById("firstTab");
+openTab.click();
+</script>
+
+</body>
+</html> 
